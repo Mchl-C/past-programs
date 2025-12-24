@@ -1,0 +1,95 @@
+import turtle
+
+def space():
+    t.penup()
+    t.forward(15)
+    t.pendown()
+
+screen = turtle.Screen()
+screen.setup(500, 500)
+t = turtle.Turtle()
+t.pensize(3)
+t.speed(5)
+
+t.penup()
+t.backward(200)
+t.pendown()
+
+t.right(75)
+t.forward(75)
+t.left(150)
+t.forward(75)
+t.right(75)
+
+space()
+
+t.right(90)
+t.forward(60)
+t.left(180)
+t.forward(60)
+t.right(90)
+
+space()
+
+t.forward(30)
+t.backward(30)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.forward(20)
+t.backward(20)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.forward(30)
+
+t.penup()
+t.left(90)
+t.forward(60)
+t.right(90)
+
+space()
+
+t.right(90)
+t.forward(60)
+t.backward(60)
+t.left(90)
+t.forward(23)
+t.right(90)
+t.forward(32)
+t.right(90)
+t.forward(23)
+t.left(135)
+t.forward(43)
+
+t.penup()
+t.left(135)
+t.forward(63)
+t.right(90)
+
+space()
+
+t.right(90)
+t.forward(60)
+t.backward(60)
+t.left(90)
+t.forward(23)
+t.right(90)
+t.forward(32)
+t.right(90)
+t.forward(23)
+t.left(135)
+t.forward(45)
+t.left(43)
+space()
+
+t.left(75)
+t.forward(65)
+t.right(150)
+t.forward(65)
+t.backward(35)
+t.right(103)
+t.forward(15)
+
+t.hideturtle()
+turtle.done()

@@ -1,0 +1,44 @@
+<BeautifulListItem>:
+    orientation: 'horizontal'
+    size_hint_y: None
+    height: dp(70)
+    spacing: dp(15)
+    padding: dp(10), 0
+    canvas.before:
+        Color:
+            rgba: get_color_from_hex('#FFFFFF')
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [dp(10),]
+        Color:
+            rgba: get_color_from_hex('#3A7FF0') if self.collide_point(*Window.mouse_pos) else get_color_from_hex('#F5F7FA')
+        Line:
+            rounded_rectangle: [self.x, self.y, self.width, self.height, dp(10)]
+            width: dp(1.5)
+
+    Image:
+        source: root.source
+        size_hint: None, None
+        size: dp(40), dp(40)
+        pos_hint: {'center_y': 0.5}
+
+    Label:
+        text: root.text
+        font_size: dp(16)
+        color: get_color_from_hex('#333333')
+        halign: 'left'
+        valign: 'middle'
+        size_hint_x: 0.7
+        text_size: self.width, None
+
+    Button:
+        text: 'Done'
+        size_hint: None, None
+        size: dp(80), dp(40)
+        pos_hint: {'center_y': 0.5}
+        background_normal: ''
+        background_color: get_color_from_hex('#3A7FF0')
+        color: get_color_from_hex('#FFFFFF')
+        font_size: dp(14)
+        on_press: app.mark_item_complete(root)
