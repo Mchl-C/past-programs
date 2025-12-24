@@ -1,0 +1,22 @@
+READ ME
+
+[ Usage ]
+1. Save your excel file in the same folder as "main.exe" file with name "file1.xlsx" and "file2.xlsx"
+2. Run "main.exe" file 
+3. Another excel file will be created titled "Result.xlsx"
+4. The comparison can be seen in the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project created by Michael Chandra
